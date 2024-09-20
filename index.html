@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+
+        <script type="module" src="/src/main.ts"></script>
+    </head>
+
+    <body class="flex h-dvh items-center justify-center bg-slate-800">
+        <div
+            class="flex aspect-[1.5/1] min-w-[min(95dvh,95vw)] flex-col gap-5 bg-slate-600 py-20 text-white shadow-2xl"
+        >
+            <h1 class="text-center text-5xl font-extralight">Todos List</h1>
+            <ul
+                class="todos-container flex h-[70%] flex-col gap-5 overflow-y-auto border-y-4 border-yellow-700 px-40 py-5 text-2xl [&_label]:flex [&_label]:gap-5"
+            ></ul>
+
+            <form action="javascript:void(0)" class="add-todo-form flex gap-5 px-40">
+                <label class="flex flex-1 flex-col text-2xl">
+                    <input type="text" class="add-todo-input p-1 text-black" />
+                </label>
+                <div class="flex items-center justify-center">
+                    <button
+                        class="aspect-square cursor-pointer rounded-full bg-yellow-500 text-black hover:scale-110 hover:ring-4 hover:ring-yellow-800 focus:scale-100 active:scale-95"
+                    >
+                        <span
+                            class="icon-[mingcute--check-fill] flex min-w-9 items-center justify-center text-yellow-800"
+                        ></span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
